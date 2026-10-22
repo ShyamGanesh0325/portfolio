@@ -77,8 +77,8 @@ export interface AchievementItem {
 export const PERSONAL_INFO = {
   name: "Shyamganesh Seetharaman",
   initials: "SS",
-  professionalTitle: "AI Engineer | Generative AI | Applied AI | Agentic AI | MLOps",
-  location: "Dubai, United Arab Emirates",
+  professionalTitle: "AI Engineer | Generative AI, Computer Vision & MLOps",
+  location: "Dubai, UAE",
   email: "shyamganesh0303@gmail.com",
   phone: "+971 56 205 2477",
   phoneFormatted: "+971 56 205 2477",
@@ -87,19 +87,20 @@ export const PERSONAL_INFO = {
   cvPath: "/assets/Shyamganesh_Seetharaman_AI_Engineer_Resume.pdf",
   portraitPath: "/assets/shyamganesh_portrait.jpg",
   availabilityText: "Open to AI Opportunities in the UAE",
-  currentObjective: "Seeking AI Engineer, Generative AI Engineer, Machine Learning Engineer, Applied AI Engineer, AI Automation Engineer, or MLOps/LLMOps internship and junior-level opportunities in Dubai and across the UAE.",
+  currentObjective: "Seeking an AI / Generative AI / Agentic AI / MLOps internship.",
+  professionalSummary: "AI Engineer and MSc AI & ML student (University of Birmingham Dubai) who builds Generative AI, LLM and Computer Vision systems end to end: data preparation, model training, fine-tuning, MLOps deployment and client integration. Built real-time YOLO inspection systems and a 14-class chest X-ray platform with automated LLM report generation. IEEE co-author. Seeking an AI / Generative AI / Agentic AI / MLOps internship.",
   education: [
     {
       degree: "MSc Artificial Intelligence & Machine Learning",
       institution: "University of Birmingham Dubai",
       period: "2026 – Present",
-      status: "Enrolled / Active",
-      location: "Dubai Academic City, UAE"
+      status: "Active / Enrolled",
+      location: "Dubai, UAE"
     },
     {
       degree: "B.E. Computer Science & Engineering",
       institution: "Kongu Engineering College",
-      period: "2021 – 2025",
+      period: "2025",
       status: "Graduated",
       location: "India"
     }
@@ -107,65 +108,65 @@ export const PERSONAL_INFO = {
   credibilityMarkers: [
     {
       organization: "Seewise.ai",
-      role: "ML / Data Science Internship",
-      period: "2026",
+      role: "ML / Data Science Intern",
+      period: "Mar 2026 – Jul 2026",
       type: "Computer Vision & YOLO Deployment"
     },
     {
       organization: "HCL Technologies Ltd.",
-      role: "Python Development Internship",
-      period: "2024–2025",
+      role: "Python Development Intern",
+      period: "Oct 2024 – Apr 2025",
       type: "Automation Scripts & OOP"
     },
     {
       organization: "IEEE IATMSI 2025",
       role: "Co-authored Research Paper",
       period: "2025",
-      type: "Deep Learning Medical Diagnosis"
+      type: "Parkinson's Disease Diagnosis, Deep Learning"
     },
     {
       organization: "Univ. of Birmingham Dubai",
       role: "MSc Artificial Intelligence & ML",
-      period: "2026–Present",
-      type: "Advanced Applied AI"
+      period: "2026 – Present",
+      type: "Advanced AI Systems"
     }
   ]
 };
 
 export const UAE_RECRUITER_PANEL = {
   title: "Built for Real-World AI Opportunities in the UAE",
-  intro: "Positioned at the heart of Dubai's AI and innovation ecosystem, combining solid engineering foundations with practical model deployment and generative AI workflows.",
+  intro: "AI Engineer and MSc AI & ML student (University of Birmingham Dubai) who builds Generative AI, LLM and Computer Vision systems end to end: data preparation, model training, fine-tuning, MLOps deployment and client integration.",
   capabilities: [
     {
-      title: "AI & Workflow Automation",
-      desc: "Building production automation tools, agentic workflows, and API-driven pipelines to streamline enterprise operations."
+      title: "Generative AI & LLMs",
+      desc: "LLMs, Generative AI, LangChain, RAG, Vector Databases, Prompt Engineering, NLP, LLM Orchestration, Multi-Provider LLM Failover, Agentic AI."
     },
     {
-      title: "Computer Vision & Industrial Inspection",
-      desc: "Deploying high-throughput YOLO models, object tracking (ByteTrack), and OpenCV CLAHE pipelines for real-time quality control."
+      title: "Computer Vision & Deep Learning",
+      desc: "Computer Vision, YOLO (Object Detection & Tracking), OpenCV, CLAHE, CNN, Transfer Learning, TensorFlow, Deep Learning."
     },
     {
-      title: "Generative AI & LLM Applications",
-      desc: "Architecting multi-provider LLM failover systems, RAG retrieval workflows with vector embeddings, and domain-specific copilots."
+      title: "Machine Learning Core",
+      desc: "Scikit-learn, Model Training & Evaluation, Hyperparameter Tuning, Feature Engineering, Data Preprocessing."
     },
     {
-      title: "Model Deployment & API Integration",
-      desc: "Containerizing inference with Docker, serving low-latency REST endpoints via FastAPI/Flask, and deploying cost-optimized architectures."
+      title: "MLOps & Deployment",
+      desc: "Docker, Kubernetes (Basic), CI/CD, FastAPI, Flask, REST APIs, Model Deployment & Monitoring, AWS."
     },
     {
-      title: "Research-Driven Machine Learning",
-      desc: "Applying rigorous scientific methodology, systematic hyperparameter tuning, and data curation—validated by peer-reviewed IEEE publication."
+      title: "Programming & Tools",
+      desc: "Python, SQL, OOP, Data Structures & Algorithms, Git, GitHub."
     }
   ],
   targetRoles: [
-    "AI / Machine Learning Intern",
+    "AI Engineer Intern",
     "Generative AI Intern",
-    "Applied AI Engineer",
-    "Junior Machine Learning Engineer",
-    "AI Automation Engineer",
-    "MLOps / LLMOps Intern"
+    "Agentic AI Intern",
+    "MLOps Intern",
+    "Computer Vision Engineer",
+    "Applied Machine Learning Engineer"
   ],
-  locationNotice: "Primary focus: Dubai, UAE · Wider focus: Abu Dhabi & United Arab Emirates."
+  locationNotice: "Location: Dubai, UAE · Open to AI / Generative AI / Agentic AI / MLOps opportunities across the UAE."
 };
 
 export const EXPERIENCES: ExperienceItem[] = [
@@ -174,123 +175,117 @@ export const EXPERIENCES: ExperienceItem[] = [
     role: "ML / Data Science Intern",
     organization: "Seewise.ai",
     location: "Remote / On-site",
-    period: "March 2026 – July 2026",
+    period: "Mar 2026 – Jul 2026",
     type: "Internship",
-    focus: "Industrial Computer Vision & Real-Time YOLO Inference",
+    focus: "Real-time Computer Vision & Industrial YOLO Pipelines",
     bullets: [
-      "Engineered real-time computer vision pipelines for industrial inspection using YOLO-based detection and tracking.",
-      "Designed dataset preparation and preprocessing workflows to support high-accuracy detection on real-world factory feeds.",
-      "Improved model accuracy through systematic hyperparameter tuning and rigorous model evaluation across defect categories.",
-      "Fine-tuned detection models and supported model deployment and client integration via clean RESTful APIs."
+      "Built real-time computer vision pipelines for industrial inspection using YOLO detection and tracking, optimized for real-time performance.",
+      "Prepared and preprocessed image datasets; improved model accuracy through systematic hyperparameter tuning.",
+      "Fine-tuned detection models and supported end-to-end deployment and client integration."
     ],
-    tags: ["YOLOv8", "Computer Vision", "OpenCV", "Object Tracking", "FastAPI", "Hyperparameter Tuning", "Industrial QA"]
+    tags: ["YOLO", "Computer Vision", "Object Detection & Tracking", "OpenCV", "Hyperparameter Tuning", "Client Integration"]
   },
   {
     id: "hcl",
     role: "Python Development Intern",
     organization: "HCL Technologies Ltd.",
     location: "On-site",
-    period: "October 2024 – April 2025",
+    period: "Oct 2024 – Apr 2025",
     type: "Internship",
-    focus: "Enterprise Python Automation & Collaborative Engineering",
+    focus: "Python Automation Scripts & Collaborative Engineering",
     bullets: [
-      "Built Python automation scripts using object-oriented programming (OOP), file handling, and robust scripting patterns.",
-      "Applied Git version control and industry coding standards in an enterprise collaborative software development environment.",
-      "Streamlined automated data processing workflows and file parsing routines to enhance developer productivity."
+      "Developed Python automation scripts (OOP, file handling) for internal training modules.",
+      "Followed Git workflows and industry coding standards in a collaborative software development environment."
     ],
-    tags: ["Python 3", "OOP", "Automation Scripting", "Git", "Enterprise Standards", "Data Parsing"]
+    tags: ["Python", "OOP", "File Handling", "Automation Scripts", "Git Workflows", "Coding Standards"]
   }
 ];
 
 export const PROJECTS: ProjectItem[] = [
   {
     id: "medlens-ai",
-    title: "MedLens AI",
-    subtitle: "Chest X-Ray Analysis Platform | Generative AI + Computer Vision",
+    title: "MedLens AI: Chest X-Ray Analysis Platform",
+    subtitle: "YOLO, OpenCV (CLAHE), LLM APIs, FastAPI",
     category: "Generative AI + Computer Vision",
     featured: true,
-    statusBadge: "Research & Prototype",
-    summary: "An enterprise-grade chest radiograph diagnostic assistance system combining an expanded 14-class YOLOv8 opacity detector, OpenCV CLAHE preprocessing, and a resilient multi-provider LLM failover architecture engineered for CPU-constrained environments.",
+    statusBadge: "Verified Project",
+    summary: "A multi-disease chest X-ray analysis platform combining scaled 14-class YOLO detection, OpenCV CLAHE contrast enhancement, and an uninterrupted multi-provider LLM failover architecture designed for CPU-only deployment.",
     architecture: [
-      { step: 1, label: "Input Radiograph", sublabel: "DICOM / JPEG" },
-      { step: 2, label: "CLAHE Preprocessing", sublabel: "Contrast Normalization" },
-      { step: 3, label: "YOLOv8 Detection", sublabel: "14-Class Abnormality" },
-      { step: 4, label: "Diagnostic Findings", sublabel: "Structured JSON Output" },
+      { step: 1, label: "Chest X-Ray Input", sublabel: "DICOM / JPEG" },
+      { step: 2, label: "CLAHE Preprocessing", sublabel: "OpenCV Contrast Fix" },
+      { step: 3, label: "YOLO 14-Class", sublabel: "Multi-Disease Detector" },
+      { step: 4, label: "Structured Findings", sublabel: "Clinical Interpretability" },
       { step: 5, label: "Multi-Provider LLM", sublabel: "Cost-Optimized Failover" },
-      { step: 6, label: "Interpretability Report", sublabel: "Clinical Draft & Heatmaps" }
+      { step: 6, label: "Automated Report", sublabel: "FastAPI Generation" }
     ],
-    architectureFlow: "Chest X-Ray → Image Preprocessing (OpenCV CLAHE) → YOLO Detection (14 Classes) → Structured Findings → LLM Report Generation",
+    architectureFlow: "Chest X-Ray → CLAHE Preprocessing → 14-Class YOLO Detection → Structured Findings → Multi-Provider LLM Failover → Automated Report",
     verifiedDetails: [
-      "Expanded a single-class YOLO detector into a 14-class multi-disease detection platform for chest radiographs.",
-      "Designed a cost-optimized, multi-provider LLM failover system for automated report generation on CPU-only deployment.",
-      "Implemented OpenCV CLAHE preprocessing to normalize contrast variances across diverse radiology sensors.",
-      "Built a structured diagnostic output pipeline focused on clinical interpretability with bounding boxes and attention heatmaps."
+      "Scaled a single-class YOLO detector into a 14-class multi-disease detection platform.",
+      "Designed a cost-optimized multi-provider LLM failover system for automated report generation on CPU-only deployment, keeping report generation uninterrupted if a provider fails.",
+      "Built CLAHE preprocessing and a structured diagnostic output pipeline for clinical interpretability."
     ],
-    disclaimer: "RESEARCH & ENGINEERING NOTICE: MedLens AI is a research and engineering prototype developed to demonstrate multimodal AI architectures. It does not provide medical advice or clinically certified diagnoses.",
-    technologies: ["YOLOv8", "PyTorch", "FastAPI", "OpenCV CLAHE", "Multi-Provider LLMs", "Next.js", "Docker", "Grad-CAM"],
+    disclaimer: "RESEARCH & ENGINEERING NOTICE: MedLens AI is a research and engineering platform demonstrating multimodal AI architectures and does not provide certified medical diagnoses.",
+    technologies: ["YOLO", "OpenCV (CLAHE)", "LLM APIs", "FastAPI", "Multi-Provider Failover", "PyTorch", "Docker"],
     image: "/assets/projects/medlens-xray.jpg",
     localPath: "Ai medical imaging"
   },
   {
     id: "bottle-inspection",
-    title: "VisionCore Industrial Water Bottle Inspection System",
-    subtitle: "Real-Time Industrial Computer Vision & QA Automation",
+    title: "AI-Based Water Bottle Inspection System",
+    subtitle: "YOLO, OpenCV, Object Tracking",
     category: "Computer Vision & Edge QA",
     featured: true,
-    statusBadge: "Production-Grade Pipeline",
-    summary: "A high-throughput quality assurance defect detection and tracking pipeline built with YOLOv8 and ByteTrack object tracking. Fully optimized for high FPS inference and integrated with FastAPI WebSocket streams and SQLite telemetry.",
+    statusBadge: "Verified Project",
+    summary: "Real-time defect detection and object tracking quality assurance system built with YOLO and OpenCV, engineered for production-grade throughput.",
     architecture: [
-      { step: 1, label: "Camera / Video Feed", sublabel: "Conveyor Belt Input" },
+      { step: 1, label: "Camera / Feed", sublabel: "Conveyor Inspection" },
       { step: 2, label: "Frame Processing", sublabel: "OpenCV Optimization" },
-      { step: 3, label: "YOLOv8 Detection", sublabel: "Defect & Cap Classification" },
-      { step: 4, label: "ByteTrack Engine", sublabel: "Unique Bottle ID Tracking" },
-      { step: 5, label: "WebSocket Stream", sublabel: "Low-Latency Telemetry" },
-      { step: 6, label: "Defect Output & DB", sublabel: "SQLite Logging & PDF Report" }
+      { step: 3, label: "YOLO Detection", sublabel: "Defect Classification" },
+      { step: 4, label: "Object Tracking", sublabel: "Unique ID Assignment" },
+      { step: 5, label: "Inference Engine", sublabel: "Real-Time Throughput" },
+      { step: 6, label: "Defect Output", sublabel: "Production Telemetry" }
     ],
-    architectureFlow: "Camera / Input → Frame Processing → YOLO Detection → Object Tracking (ByteTrack) → Defect Output & Live Telemetry",
+    architectureFlow: "Camera / Input → OpenCV Processing → YOLO Detection → Object Tracking (Unique IDs) → High-Throughput Defect Output",
     verifiedDetails: [
-      "Built a real-time defect detection system utilizing Ultralytics YOLOv8 for industrial packaging quality assurance.",
-      "Implemented object tracking with persistent unique ID assignment using ByteTrack to track bottles across frame sequences.",
-      "Optimized the inference pipeline for real-time throughput with Apple Silicon MPS hardware acceleration and CPU fallback.",
-      "Engineered unified FastAPI WebSocket streaming to power an interactive inspection dashboard with automated PDF audit reports."
+      "Built a real-time defect detection system with object tracking and unique ID assignment.",
+      "Optimized the inference pipeline for production-grade real-time throughput."
     ],
-    disclaimer: "ENGINEERING DEMONSTRATION: Developed with real packaging datasets to benchmark high-throughput industrial edge inference. Specific commercial metrics or factory client contracts are not claimed.",
-    technologies: ["YOLOv8", "ByteTrack", "OpenCV", "FastAPI WebSockets", "React + Tailwind", "SQLite", "ReportLab", "PyTorch MPS"],
+    disclaimer: "ENGINEERING NOTICE: Industrial quality assurance pipeline benchmarked for high-throughput edge inspection.",
+    technologies: ["YOLO", "OpenCV", "Object Tracking", "FastAPI", "Python", "Real-Time Inference"],
     localPath: "Bottle project"
   },
   {
     id: "disease-prediction",
-    title: "Disease Prediction Systems & IEEE Published Research",
-    subtitle: "Plant Pathology CNN & Parkinson's Disease Clinical Prediction",
+    title: "Disease Prediction Systems (Potato & Parkinson's)",
+    subtitle: "TensorFlow, CNN, Scikit-learn",
     category: "Deep Learning & Applied ML",
     featured: true,
-    statusBadge: "IEEE IATMSI 2025 Published",
-    summary: "Two specialized machine learning systems tackling distinct biological challenges: agricultural potato blight classification using deep convolutional neural networks (CNNs), and clinical Parkinson's disease diagnosis prediction using structured medical data.",
+    statusBadge: "IEEE IATMSI 2025 Co-Authored",
+    summary: "Deep learning convolutional models for agricultural potato disease detection and clinical machine learning models for Parkinson's disease diagnosis prediction.",
     architecture: [
-      { step: 1, label: "Dual Data Feeds", sublabel: "Leaf Imagery & Medical Tabular" },
-      { step: 2, label: "Data Augmentation", sublabel: "Rotation, Scaling, Normalization" },
-      { step: 3, label: "Deep CNN Classifier", sublabel: "Transfer Learning (Plant Village)" },
-      { step: 4, label: "Feature Engineering", sublabel: "Clinical Biomarker Extraction" },
-      { step: 5, label: "Ensemble Models", sublabel: "Parkinson's Prediction" },
-      { step: 6, label: "Evaluation", sublabel: "IEEE IATMSI 2025 Paper" }
+      { step: 1, label: "Input Datasets", sublabel: "Leaf Images & Clinical Data" },
+      { step: 2, label: "Data Augmentation", sublabel: "Image Transformations" },
+      { step: 3, label: "CNN Classifiers", sublabel: "Transfer Learning" },
+      { step: 4, label: "Feature Engineering", sublabel: "Clinical Biomarkers" },
+      { step: 5, label: "ML Classification", sublabel: "Scikit-Learn Modeling" },
+      { step: 6, label: "IEEE Publication", sublabel: "IATMSI 2025 Paper" }
     ],
-    architectureFlow: "Raw Clinical / Leaf Data → Preprocessing & Augmentation → CNN / ML Modeling → Feature Evaluation → Validated Publication",
+    architectureFlow: "Leaf / Medical Data → Preprocessing & Augmentation → CNN / ML Modeling → Feature Engineering → Validated Publication",
     verifiedDetails: [
-      "Trained deep CNN classifiers with transfer learning and extensive data augmentation for automated early potato leaf disease detection.",
-      "Built machine learning models on structured medical datasets with rigorous feature engineering and cross-validation.",
-      "Co-authored peer-reviewed research paper titled 'Enhancing Parkinson's Disease Diagnosis: A Deep Learning Framework' presented at IEEE IATMSI 2025."
+      "Trained CNN classifiers with transfer learning and augmentation for potato disease detection.",
+      "Built ML models on structured medical data with feature engineering; co-authored IEEE IATMSI 2025 paper, “Enhancing Parkinson's Disease Diagnosis: A Deep Learning Framework.”"
     ],
-    disclaimer: "ACADEMIC RESEARCH: Co-authored research paper presented at IEEE IATMSI 2025. Academic diagnostic frameworks require rigorous hospital clinical trials prior to clinical deployment.",
-    technologies: ["TensorFlow", "CNN Architectures", "Scikit-learn", "Transfer Learning", "Feature Engineering", "Pandas", "IEEE Publication"]
+    disclaimer: "ACADEMIC RESEARCH: Co-authored research paper presented at IEEE IATMSI 2025. Academic diagnostic frameworks require clinical validation before hospital deployment.",
+    technologies: ["TensorFlow", "CNN", "Scikit-learn", "Transfer Learning", "Feature Engineering", "Data Augmentation", "IEEE Publication"]
   },
   {
     id: "google-adk-voice-agent",
     title: "ADK Multimodal Voice Agent (Healthcare Assistant)",
-    subtitle: "Real-Time Multimodal Voice AI | Google ADK + Gemini Live + MCP",
+    subtitle: "Google ADK, Gemini Live, MCP, FastAPI",
     category: "Multimodal Voice AI & Agentic Systems",
     featured: true,
     statusBadge: "Active Open Source Project",
-    summary: "A real-time, bidirectional voice agent powered by Google ADK (Agent Development Kit), Gemini Live WebSockets, and Anthropic's Model Context Protocol (MCP). Features low-latency bidirectional PCM audio streaming, live visual waveforms, and clinical appointment & patient history tool execution over SQLite.",
+    summary: "A real-time, bidirectional multimodal voice agent powered by Google ADK (Agent Development Kit), Gemini Live WebSockets, and Anthropic's Model Context Protocol (MCP) for low-latency voice and clinical appointment/patient record tool execution over SQLite.",
     architecture: [
       { step: 1, label: "PCM Audio Input", sublabel: "16-bit Mic Capture" },
       { step: 2, label: "FastAPI WebSockets", sublabel: "Bidirectional Stream" },
@@ -303,10 +298,9 @@ export const PROJECTS: ProjectItem[] = [
     verifiedDetails: [
       "Integrated Google ADK (Agent Development Kit v2.2.0+) with Gemini Live Preview for bidirectional, low-latency audio interaction.",
       "Engineered a Model Context Protocol (MCP) server architecture exposing clinical database operations (appointments, patient records, medical history) as modular AI tools.",
-      "Built full-duplex WebSocket communication pipeline supporting real-time PCM 16-bit audio recording, playback, and visual sound waves.",
-      "Constructed healthcare agent instructions with clinical domain boundaries, patient privacy protocols, and automated appointment scheduling."
+      "Built full-duplex WebSocket communication pipeline supporting real-time PCM 16-bit audio recording, playback, and visual sound waves."
     ],
-    disclaimer: "DEMONSTRATION & ARCHITECTURE NOTICE: Developed as an open-source demonstration of Google ADK and MCP architectures. This demo is not HIPAA-certified and is designed for prototype and technical demonstration purposes.",
+    disclaimer: "DEMONSTRATION NOTICE: Open-source demonstration of Google ADK and MCP architectures for multimodal agentic systems.",
     technologies: ["Google ADK", "Gemini Live", "Model Context Protocol (MCP)", "FastAPI", "WebSockets", "Python 3.12", "SQLite", "Multimodal Audio"],
     githubUrl: "https://github.com/ShyamGanesh0325/google-adk-voice-agent",
     localPath: "google-adk-voice-agent"
@@ -315,65 +309,70 @@ export const PROJECTS: ProjectItem[] = [
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
-    category: "Artificial Intelligence & Generative AI",
-    description: "Architecting intelligent systems, LLM orchestration, and contextual retrieval pipelines.",
+    category: "Generative AI & LLMs",
+    description: "Architecting large language models, agentic workflows, and contextual retrieval pipelines.",
     skills: [
-      { name: "LLMs & Prompt Engineering", highlight: true, context: "OpenAI API, local vLLM, structured system prompts" },
-      { name: "Generative AI & Copilots", highlight: true, context: "Conversational AI and task-oriented copilots" },
-      { name: "Multi-Provider LLM Failover", highlight: true, context: "Cost-optimized fallbacks for resilient deployment" },
-      { name: "RAG & Vector Retrieval", highlight: true, context: "Context-aware response grounding with vector stores" },
-      { name: "LangChain & Orchestration", highlight: false, context: "Chain composition and tool execution" },
-      { name: "NLP Pipelines", highlight: false, context: "Tokenization, text preprocessing, entity extraction" },
-      { name: "Embeddings", highlight: false, context: "Semantic similarity and dense document retrieval" }
+      { name: "Large Language Models (LLMs)", highlight: true, context: "OpenAI API, local vLLM, Gemini Live" },
+      { name: "Generative AI", highlight: true, context: "Multimodal generation and conversational systems" },
+      { name: "LangChain", highlight: false, context: "Chain composition and orchestration" },
+      { name: "Retrieval-Augmented Generation (RAG)", highlight: true, context: "Context-aware response grounding" },
+      { name: "Vector Databases", highlight: false, context: "Embeddings, semantic similarity retrieval" },
+      { name: "Prompt Engineering", highlight: true, context: "Structured system prompts & safety controls" },
+      { name: "NLP", highlight: false, context: "Natural language processing pipelines" },
+      { name: "LLM Orchestration", highlight: false, context: "Multi-agent workflows & task automation" },
+      { name: "Multi-Provider LLM Failover", highlight: true, context: "Cost-optimized fallbacks for CPU deployment" },
+      { name: "Agentic AI", highlight: true, context: "Google ADK & MCP tool dispatch" }
     ]
   },
   {
-    category: "Machine Learning & Deep Learning",
-    description: "Developing, evaluating, and tuning mathematical learning models on vision and structured data.",
+    category: "Computer Vision & Deep Learning",
+    description: "Real-time visual processing, object detection & tracking, and neural networks.",
     skills: [
-      { name: "PyTorch & TensorFlow", highlight: true, context: "Deep learning model development and inference" },
-      { name: "CNN Architectures", highlight: true, context: "Transfer learning, feature extractors, classification" },
-      { name: "Scikit-Learn", highlight: true, context: "Supervised and unsupervised tabular learning" },
-      { name: "Model Training & Evaluation", highlight: false, context: "Loss functions, precision-recall, cross-validation" },
-      { name: "Hyperparameter Tuning", highlight: false, context: "Systematic grid/random search for optimal metrics" },
-      { name: "Feature Engineering", highlight: false, context: "Domain-specific feature extraction & scaling" },
-      { name: "Data Preprocessing", highlight: false, context: "Augmentation, cleaning, outlier handling" }
+      { name: "Computer Vision", highlight: true, context: "Image processing and defect detection" },
+      { name: "YOLO (Object Detection & Tracking)", highlight: true, context: "Industrial defect inspection & 14-class detection" },
+      { name: "OpenCV", highlight: true, context: "Real-time video capture and frame manipulation" },
+      { name: "CLAHE", highlight: true, context: "Contrast Limited Adaptive Histogram Equalization" },
+      { name: "CNN", highlight: true, context: "Convolutional neural network architectures" },
+      { name: "Transfer Learning", highlight: true, context: "Pre-trained vision models fine-tuning" },
+      { name: "TensorFlow", highlight: true, context: "Model training and deep learning workflows" },
+      { name: "Deep Learning", highlight: true, context: "Multi-layer neural network training" }
     ]
   },
   {
-    category: "Computer Vision",
-    description: "Real-time visual processing, object detection, and edge inspection pipelines.",
+    category: "Machine Learning",
+    description: "Statistical learning algorithms, feature engineering, and hyperparameter tuning.",
     skills: [
-      { name: "YOLO (v8) Detection", highlight: true, context: "Trained on industrial and medical radiograph datasets" },
-      { name: "Object Tracking (ByteTrack)", highlight: true, context: "Centroid tracking with persistent unique ID assignment" },
-      { name: "OpenCV", highlight: true, context: "Real-time video capture, image transformation, filters" },
-      { name: "CLAHE Preprocessing", highlight: true, context: "Contrast Limited Adaptive Histogram Equalization" },
-      { name: "Grad-CAM Heatmaps", highlight: false, context: "Visual interpretability and attention maps" },
-      { name: "Real-Time Inference", highlight: false, context: "Throughput optimization and frame streaming" }
+      { name: "Scikit-learn", highlight: true, context: "Supervised and unsupervised learning models" },
+      { name: "Model Training & Evaluation", highlight: true, context: "Cross-validation, loss curves, precision-recall" },
+      { name: "Hyperparameter Tuning", highlight: true, context: "Systematic model accuracy optimization" },
+      { name: "Feature Engineering", highlight: true, context: "Biomarker extraction and scaling" },
+      { name: "Data Preprocessing", highlight: true, context: "Cleaning, normalization, augmentation" }
     ]
   },
   {
-    category: "Backend & Deployment",
-    description: "Building production-grade APIs, containerizing services, and deploying ML models.",
+    category: "MLOps & Deployment",
+    description: "Containerization, API endpoints, CI/CD, and model deployment.",
     skills: [
-      { name: "Python 3", highlight: true, context: "Primary language for ML, scripting, and backend" },
-      { name: "FastAPI", highlight: true, context: "High-performance async REST APIs and WebSockets" },
-      { name: "Flask", highlight: false, context: "Microservices and lightweight endpoints" },
-      { name: "Docker & Containerization", highlight: true, context: "Multi-stage builds and Docker Compose stacks" },
-      { name: "REST APIs & WebSockets", highlight: false, context: "Full-duplex real-time inference streaming" },
-      { name: "AWS Cloud Fundamentals", highlight: false, context: "EC2, S3, cloud deployment concepts" },
-      { name: "CI/CD & Git/GitHub", highlight: false, context: "Version control and automated testing workflows" }
+      { name: "Docker", highlight: true, context: "Containerization & Docker Compose" },
+      { name: "Kubernetes (Basic)", highlight: false, context: "Container orchestration fundamentals" },
+      { name: "CI/CD", highlight: false, context: "Automated testing and continuous delivery" },
+      { name: "FastAPI", highlight: true, context: "High-performance async APIs & WebSockets" },
+      { name: "Flask", highlight: false, context: "Microservices and lightweight REST endpoints" },
+      { name: "REST APIs", highlight: true, context: "Client integration and inference endpoints" },
+      { name: "Model Deployment & Monitoring", highlight: true, context: "Production-grade throughput and telemetry" },
+      { name: "AWS", highlight: false, context: "Cloud infrastructure fundamentals" }
     ]
   },
   {
-    category: "Programming & Engineering",
-    description: "Core computer science fundamentals, clean code, and database management.",
+    category: "Programming & Tools",
+    description: "Core programming languages, software engineering standards, and version control.",
     skills: [
-      { name: "Object-Oriented Programming (OOP)", highlight: true, context: "Clean Architecture, Hexagonal patterns" },
-      { name: "SQL & Relational Databases", highlight: true, context: "SQLite, PostgreSQL, SQLAlchemy ORM" },
-      { name: "Data Structures & Algorithms", highlight: false, context: "Optimal time/space complexity execution" },
-      { name: "Pandas & NumPy", highlight: true, context: "Vectorized data manipulation and matrix algebra" },
-      { name: "Git Version Control", highlight: false, context: "Collaborative branches, PRs, standards" }
+      { name: "Python", highlight: true, context: "Primary language for AI/ML and automation" },
+      { name: "SQL", highlight: true, context: "Relational database querying and management" },
+      { name: "OOP", highlight: true, context: "Object-oriented programming architecture" },
+      { name: "Data Structures & Algorithms", highlight: false, context: "Optimal algorithmic problem solving" },
+      { name: "Git", highlight: true, context: "Version control workflows" },
+      { name: "GitHub", highlight: true, context: "Collaborative code repositories and PRs" }
     ]
   }
 ];
@@ -381,29 +380,24 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 export const RESEARCH_PUBLICATIONS: PublicationItem[] = [
   {
     title: "Enhancing Parkinson's Disease Diagnosis: A Deep Learning Framework",
-    conference: "IEEE IATMSI 2025 (International Conference on Advances in Technology, Management & Social Sciences)",
+    conference: "IEEE IATMSI 2025 (Parkinson's Disease Diagnosis, Deep Learning)",
     year: "2025",
     role: "Co-Author",
-    description: "Co-authored peer-reviewed research exploring deep learning convolutional feature extraction on medical data for automated early diagnosis of Parkinson's disease. Focused on feature representation, diagnostic sensitivity, and algorithmic reliability.",
-    tags: ["IEEE IATMSI 2025", "Deep Learning", "Medical AI", "Parkinson's Disease", "Peer-Reviewed"]
+    description: "Co-authored peer-reviewed research paper presented at IEEE IATMSI 2025 investigating deep learning convolutional feature extraction on structured medical data for early Parkinson's disease diagnosis.",
+    tags: ["IEEE IATMSI 2025", "Deep Learning", "Parkinson's Disease Diagnosis", "Co-Author"]
   }
 ];
 
 export const CERTIFICATIONS: CertificationItem[] = [
   {
-    title: "IBM Data Science Professional Certification",
-    issuer: "Coursera / IBM",
+    title: "IBM Data Science Certification",
+    issuer: "Coursera",
     badgeType: "professional"
   },
   {
     title: "IBM Data Science with AI Certification",
     issuer: "SLA Institute",
     badgeType: "professional"
-  },
-  {
-    title: "Machine Learning & AI Foundations",
-    issuer: "Self-Paced Training & Applied Labs",
-    badgeType: "verified"
   }
 ];
 
@@ -412,37 +406,31 @@ export const LEADERSHIP_ACHIEVEMENTS: AchievementItem[] = [
     title: "National Gold Medalist — Roller Skating",
     organization: "Roller Skating Federation of India (RSFI)",
     type: "sports",
-    description: "Secured 1st Place National Gold Medal at RSFI Championship (Visakhapatnam / Vizag). Represents years of elite athletic discipline, focus, and peak competitive execution."
+    description: "Secured National Gold Medal at RSFI Roller Skating championship."
   },
   {
-    title: "National Silver Medalist — Roller Skating",
+    title: "National Silver & Bronze Medalist",
     organization: "School Games Federation of India (SGFI)",
     type: "sports",
-    description: "Won National Silver Medal at SGFI Championship (Delhi), competing against top tier national athletes."
+    description: "Won National Silver and Bronze Medals at SGFI championships."
   },
   {
-    title: "National Bronze Medalist — Roller Skating",
-    organization: "School Games Federation of India (SGFI)",
-    type: "sports",
-    description: "Won National Bronze Medal at SGFI Championship (Mumbai)."
-  },
-  {
-    title: "Treasurer — Computer Society of India (CSI)",
-    organization: "CSI Student Chapter",
+    title: "Treasurer — CSI",
+    organization: "Computer Society of India (CSI)",
     type: "leadership",
-    description: "Elected student treasurer managing budget allocation, sponsorships, and financial oversight for regional tech symposiums and workshops."
+    description: "Elected student treasurer managing budget allocation and financial oversight for regional tech symposiums and workshops."
   },
   {
     title: "Executive Member — App Dev Club",
     organization: "Application Development Club",
     type: "leadership",
-    description: "Organized technical peer bootcamps, code reviews, and developer hackathons across engineering cohorts."
+    description: "Organized technical peer bootcamps, code reviews, and developer hackathons."
   },
   {
     title: "House Captain",
     organization: "Academic Student Council",
     type: "leadership",
-    description: "Led student body in inter-house competitions, fostering sportsmanship, team spirit, and strategic leadership."
+    description: "Led student body in inter-house competitions, fostering sportsmanship and team leadership."
   }
 ];
 

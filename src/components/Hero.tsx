@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
 
             {/* Supporting Copy */}
             <p className="text-base sm:text-lg text-text-secondary dark:text-text-secondary light:text-slate-600 max-w-2xl leading-relaxed">
-              AI Engineer and MSc AI & ML student at the <strong className="text-text-primary dark:text-text-primary light:text-slate-900 font-semibold">University of Birmingham Dubai</strong>, building practical solutions across Generative AI, computer vision, intelligent automation and model deployment.
+              AI Engineer and MSc AI & ML student (<strong className="text-text-primary dark:text-text-primary light:text-slate-900 font-semibold">University of Birmingham Dubai</strong>) who builds Generative AI, LLM and Computer Vision systems end to end: data preparation, model training, fine-tuning, MLOps deployment and client integration.
             </p>
 
             {/* Call to Actions */}

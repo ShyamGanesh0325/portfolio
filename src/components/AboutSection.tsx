@@ -28,7 +28,7 @@ export const AboutSection: React.FC = () => {
           {/* Main Story (7 Cols) */}
           <div className="lg:col-span-7 space-y-6 text-text-secondary dark:text-text-secondary light:text-slate-700 leading-relaxed text-base sm:text-lg">
             <p className="p-6 rounded-2xl bg-midnight-800/40 dark:bg-midnight-800/40 light:bg-slate-50 border border-white/5 dark:border-white/5 light:border-slate-200">
-              I’m an AI engineer focused on turning machine learning research into practical software. My experience spans computer vision, Generative AI, data preparation, model optimization and deployment-oriented engineering.
+              {PERSONAL_INFO.professionalSummary}
             </p>
 
             <p>
