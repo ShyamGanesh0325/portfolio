@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #080D18;
+    --bg-secondary: #101827;
+    --bg-card: #141F32;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(66, 232, 245, 0.35);
+    --text-primary: #F4F7FC;
+    --text-secondary: #A5B2C5;
+    --accent-cyan: #42E8F5;
+    --accent-gold: #D9B574;
+  }
+
+  .light {
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --border-color: rgba(15, 23, 42, 0.1);
+    --border-hover: rgba(8, 145, 178, 0.4);
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --accent-cyan: #0891B2;
+    --accent-gold: #B48936;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@layer utilities {
+  .gradient-text-cyan {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-glow via-teal-300 to-blue-500;
+  }
+  
+  .gradient-text-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-champagne via-amber-200 to-yellow-500;
+  }
+
+  .gradient-text-silver {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400;
+  }
+
+  /* Glassmorphism surfaces */
+  .glass-card {
+    background: rgba(20, 31, 50, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  .light .glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.06);
+  }
+
+  .glass-panel {
+    background: rgba(16, 24, 39, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .light .glass-panel {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+  }
+
+  /* Cyber / Dubai technical grid pattern */
+  .bg-grid-pattern {
+    background-image: radial-gradient(rgba(66, 232, 245, 0.08) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  .light .bg-grid-pattern {
+    background-image: radial-gradient(rgba(8, 145, 178, 0.12) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080D18;
+}
+.light ::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2D47;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #42E8F5;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
