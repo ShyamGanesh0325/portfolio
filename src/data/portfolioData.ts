@@ -284,29 +284,32 @@ export const PROJECTS: ProjectItem[] = [
     technologies: ["TensorFlow", "CNN Architectures", "Scikit-learn", "Transfer Learning", "Feature Engineering", "Pandas", "IEEE Publication"]
   },
   {
-    id: "dubai-real-estate",
-    title: "Dubai Real Estate Sales & Property Intelligence Agent",
-    subtitle: "Autonomous Multi-Stage Property Sales Agent (MSc Project)",
-    category: "Agentic AI & Clean Architecture",
-    featured: false,
-    statusBadge: "Phase 1: Architecture Initialized",
-    summary: "An MSc AI/ML project modeling an enterprise-grade, multi-stage AI agent designed for automated lead qualification, structured requirement extraction, explainable property recommendation, and predictive lead intent scoring in Dubai.",
+    id: "google-adk-voice-agent",
+    title: "ADK Multimodal Voice Agent (Healthcare Assistant)",
+    subtitle: "Real-Time Multimodal Voice AI | Google ADK + Gemini Live + MCP",
+    category: "Multimodal Voice AI & Agentic Systems",
+    featured: true,
+    statusBadge: "Active Open Source Project",
+    summary: "A real-time, bidirectional voice agent powered by Google ADK (Agent Development Kit), Gemini Live WebSockets, and Anthropic's Model Context Protocol (MCP). Features low-latency bidirectional PCM audio streaming, live visual waveforms, and clinical appointment & patient history tool execution over SQLite.",
     architecture: [
-      { step: 1, label: "Buyer Inquiry", sublabel: "WhatsApp / Web Chat" },
-      { step: 2, label: "Intent & Entity Extractor", sublabel: "Pydantic Domain Schemas" },
-      { step: 3, label: "Clean Architecture Core", sublabel: "Hexagonal Decoupled Logic" },
-      { step: 4, label: "Vector Search Index", sublabel: "Dubai Property Embeddings" },
-      { step: 5, label: "Scoring Engine", sublabel: "Predictive Lead Intent" }
+      { step: 1, label: "PCM Audio Input", sublabel: "16-bit Mic Capture" },
+      { step: 2, label: "FastAPI WebSockets", sublabel: "Bidirectional Stream" },
+      { step: 3, label: "Google ADK Hub", sublabel: "Agent Session Runner" },
+      { step: 4, label: "Gemini Live API", sublabel: "Multimodal Voice Engine" },
+      { step: 5, label: "MCP Server Tools", sublabel: "Model Context Protocol" },
+      { step: 6, label: "Clinical SQLite DB", sublabel: "Records & Voice Stream" }
     ],
-    architectureFlow: "Lead Chat Inquiry → Entity Extraction → Domain Use Cases → Vector Property Retrieval → Lead Scoring Dossier",
+    architectureFlow: "Client Audio (PCM 16-bit) → FastAPI WebSockets → Google ADK Orchestrator → Gemini Live Engine → MCP Tool Dispatcher → Clinical SQLite Database",
     verifiedDetails: [
-      "Designed clean hexagonal architecture with strict decoupling between domain entities, application orchestrators, and vector infrastructure.",
-      "Implemented comprehensive Pydantic domain models for buyer requirements, Dubai property listings, and lead qualification dossiers.",
-      "Distinguishes implemented Phase 1 architecture initialization, domain contracts, and test fixtures from planned multi-agent LLM orchestration."
+      "Integrated Google ADK (Agent Development Kit v2.2.0+) with Gemini Live Preview for bidirectional, low-latency audio interaction.",
+      "Engineered a Model Context Protocol (MCP) server architecture exposing clinical database operations (appointments, patient records, medical history) as modular AI tools.",
+      "Built full-duplex WebSocket communication pipeline supporting real-time PCM 16-bit audio recording, playback, and visual sound waves.",
+      "Constructed healthcare agent instructions with clinical domain boundaries, patient privacy protocols, and automated appointment scheduling."
     ],
-    disclaimer: "ACADEMIC SPECIFICATION: Phase 1 repository architecture initialization is complete with domain entities, interfaces, and evaluation suites. Active development continues toward Phase 2.",
-    technologies: ["Python 3.11", "Clean Architecture", "Pydantic V2", "FastAPI", "Vector Search", "Pytest"],
-    localPath: "dubai-real-estate-ai-agent"
+    disclaimer: "DEMONSTRATION & ARCHITECTURE NOTICE: Developed as an open-source demonstration of Google ADK and MCP architectures. This demo is not HIPAA-certified and is designed for prototype and technical demonstration purposes.",
+    technologies: ["Google ADK", "Gemini Live", "Model Context Protocol (MCP)", "FastAPI", "WebSockets", "Python 3.12", "SQLite", "Multimodal Audio"],
+    githubUrl: "https://github.com/ShyamGanesh0325/google-adk-voice-agent",
+    localPath: "google-adk-voice-agent"
   }
 ];
 

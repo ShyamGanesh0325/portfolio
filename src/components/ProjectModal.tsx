@@ -5,9 +5,11 @@ import {
   ShieldAlert, 
   Cpu, 
   CheckCircle2, 
-  Terminal 
+  Terminal,
+  ExternalLink 
 } from 'lucide-react';
 import type { ProjectItem } from '../data/portfolioData';
+import { GitHubIcon } from './Icons';
 
 interface ProjectModalProps {
   project: ProjectItem | null;
@@ -163,13 +165,30 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
         </div>
 
         {/* Modal Footer */}
-        <div className="p-6 border-t border-white/10 dark:border-white/10 light:border-slate-200 bg-midnight-800/80 dark:bg-midnight-800/80 light:bg-slate-50 flex items-center justify-between">
-          <span className="text-xs font-mono text-text-muted dark:text-text-muted light:text-slate-500">
-            Shyamganesh Seetharaman · Portfolio Project Dossier
-          </span>
+        <div className="p-6 border-t border-white/10 dark:border-white/10 light:border-slate-200 bg-midnight-800/80 dark:bg-midnight-800/80 light:bg-slate-50 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2">
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl text-xs font-bold font-mono bg-cyan-glow hover:bg-cyan-300 text-midnight-950 transition-colors shadow-glow-cyan-sm"
+              >
+                <GitHubIcon className="w-4 h-4" />
+                <span>VIEW REPOSITORY ON GITHUB</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            )}
+            {!project.githubUrl && (
+              <span className="text-xs font-mono text-text-muted dark:text-text-muted light:text-slate-500">
+                Shyamganesh Seetharaman · Portfolio Project Dossier
+              </span>
+            )}
+          </div>
+          
           <button
             onClick={onClose}
-            className="px-5 py-2 rounded-xl text-xs font-bold font-mono bg-midnight-800 hover:bg-midnight-700 dark:bg-midnight-800 dark:hover:bg-midnight-700 light:bg-slate-200 light:hover:bg-slate-300 text-text-primary dark:text-text-primary light:text-slate-800 transition-colors"
+            className="px-5 py-2 rounded-xl text-xs font-bold font-mono bg-midnight-800 hover:bg-midnight-700 dark:bg-midnight-800 dark:hover:bg-midnight-700 light:bg-slate-200 light:hover:bg-slate-300 text-text-primary dark:text-text-primary light:text-slate-800 transition-colors shrink-0"
           >
             CLOSE DOSSIER
           </button>

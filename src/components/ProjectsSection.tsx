@@ -8,12 +8,13 @@ import {
 import { PROJECTS } from '../data/portfolioData';
 import type { ProjectItem } from '../data/portfolioData';
 import { ProjectModal } from './ProjectModal';
+import { GitHubIcon } from './Icons';
 
 export const ProjectsSection: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [activeModalProject, setActiveModalProject] = useState<ProjectItem | null>(null);
 
-  const categories = ['All', 'Generative AI + Computer Vision', 'Computer Vision & Edge QA', 'Deep Learning & Applied ML', 'Agentic AI & Clean Architecture'];
+  const categories = ['All', 'Generative AI + Computer Vision', 'Computer Vision & Edge QA', 'Deep Learning & Applied ML', 'Multimodal Voice AI & Agentic Systems'];
 
   const filteredProjects = selectedCategory === 'All' 
     ? PROJECTS 
@@ -180,14 +181,30 @@ export const ProjectsSection: React.FC = () => {
                   )}
                 </div>
 
-                {/* Inspect Button */}
-                <button
-                  onClick={() => setActiveModalProject(project)}
-                  className="w-full py-3 px-4 rounded-xl font-mono text-xs font-bold tracking-wider bg-midnight-900 dark:bg-midnight-900 light:bg-slate-100 hover:bg-cyan-glow hover:text-midnight-950 text-cyan-glow dark:text-cyan-glow light:text-cyan-dark border border-cyan-glow/30 hover:border-transparent transition-all duration-300 flex items-center justify-center space-x-2 shadow-sm group/btn"
-                >
-                  <span>VIEW ARCHITECTURE & DOSSIER</span>
-                  <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </button>
+                {/* Action Buttons */}
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => setActiveModalProject(project)}
+                    className="flex-1 py-3 px-4 rounded-xl font-mono text-xs font-bold tracking-wider bg-midnight-900 dark:bg-midnight-900 light:bg-slate-100 hover:bg-cyan-glow hover:text-midnight-950 text-cyan-glow dark:text-cyan-glow light:text-cyan-dark border border-cyan-glow/30 hover:border-transparent transition-all duration-300 flex items-center justify-center space-x-2 shadow-sm group/btn"
+                  >
+                    <span>VIEW ARCHITECTURE & DOSSIER</span>
+                    <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </button>
+
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="py-3 px-3.5 rounded-xl font-mono text-xs font-bold bg-midnight-900 dark:bg-midnight-900 light:bg-slate-100 hover:bg-midnight-700 dark:hover:bg-midnight-700 light:hover:bg-slate-200 text-text-primary dark:text-text-primary light:text-slate-800 border border-white/10 dark:border-white/10 light:border-slate-300 transition-all duration-200 flex items-center justify-center space-x-1.5 shrink-0"
+                      title="View GitHub Repository"
+                      aria-label="View GitHub Repository"
+                    >
+                      <GitHubIcon className="w-4 h-4 text-cyan-glow" />
+                      <span className="hidden sm:inline">REPO</span>
+                    </a>
+                  )}
+                </div>
 
               </div>
 
